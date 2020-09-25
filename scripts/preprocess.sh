@@ -22,4 +22,4 @@ then
 fi
 
 
-python ./fairseq/preprocess.py --source-lang src --target-lang tgt --trainpref $RAW_PATH/train --validpref $RAW_PATH/dev --testpref $RAW_PATH/test --destdir output/data-bin/"$DATABIN""$BINTAG"  --workers 20 --bpe fastbpe --joined-dictionary
+python3 ./fairseq/preprocess.py --source-lang src --target-lang tgt --trainpref $RAW_PATH/train --validpref $RAW_PATH/dev --testpref $RAW_PATH/test --destdir output/data-bin/"$DATABIN""$BINTAG"  --workers 20 --bpe fastbpe --joined-dictionary
