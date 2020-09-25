@@ -2,7 +2,7 @@
 This is the code for the paper "Partially-Aligned Data-to-Text Generation with Distant Supervision".
 
 
-![image](https://user-images.githubusercontent.com/1419566/94226467-40420800-ff2a-11ea-9fa7-70141d3efe82.png)
+<img src="https://user-images.githubusercontent.com/1419566/94226467-40420800-ff2a-11ea-9fa7-70141d3efe82.png" alt="drawing" style="width:200px;"/>
 
 
 
