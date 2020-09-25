@@ -28,7 +28,7 @@ echo "CUDA_VISIBLE_DEVICES:" $CUDA_VISIBLE_DEVICES
 export SRC=src
 export TGT=tgt
 export MTK=30000 
-export EPOCH=123
+export EPOCH=103
 export VALIDINTERVAL=20
 
 PRETRAINEXP=$DATASET"__endorsement,pretrain"   
@@ -62,4 +62,4 @@ echo "SRC: " $SRC ", TGT: " $TGT ", MTK:" $MTK
 
 
 
-PYTHONIOENCODING=utf8 python3 $DBG ./fairseq/train.py output/data-bin/$DATASET  --optimizer adam --clip-norm 1.0 --lr $LR -s $SRC -t $TGT --label-smoothing 0.1 --dropout 0.3 --max-tokens $MTK --min-lr '1e-09' --lr-scheduler inverse_sqrt --weight-decay 0.0001  --max-update 500000 --warmup-updates 4000 --warmup-init-lr '1e-07' --adam-betas '(0.9, 0.98)' --save-dir output/models/$EXPNAME --tensorboard-logdir ./output/log/runs/$EXPNAME --results-dir ./output/eval/$EXPNAME --max-epoch $EPOCH --save-interval 20 --validate-interval $VALIDINTERVAL  --arch distant_transformer --criterion distant_transformer_loss --user-mode $MODE --fp16 --task nlg --reset-optimizer $LOADPAR
+PYTHONIOENCODING=utf8 python3 ./fairseq/train.py output/data-bin/$DATASET  --optimizer adam --clip-norm 1.0 --lr $LR -s $SRC -t $TGT --label-smoothing 0.1 --dropout 0.3 --max-tokens $MTK --min-lr '1e-09' --lr-scheduler inverse_sqrt --weight-decay 0.0001  --max-update 500000 --warmup-updates 4000 --warmup-init-lr '1e-07' --adam-betas '(0.9, 0.98)' --save-dir output/models/$EXPNAME --tensorboard-logdir ./output/log/runs/$EXPNAME --results-dir ./output/eval/$EXPNAME --max-epoch $EPOCH --save-interval 20 --validate-interval $VALIDINTERVAL  --arch distant_transformer --criterion distant_transformer_loss --user-mode $MODE --fp16 --task nlg --reset-optimizer $LOADPAR

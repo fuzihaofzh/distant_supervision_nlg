@@ -1,5 +1,5 @@
 # distant_supervision_nlg
-This is the code for the paper "Partially-Aligned Data-to-Text Generation with Distant Supervision".
+This is the code for the EMNLP 2020 paper "Partially-Aligned Data-to-Text Generation with Distant Supervision". Traditional text generation task requires well-aligned data which is expensive to annotate. We relax the strict restrictions and propose this new task aiming at utilizing automatically made partially-aligned data. This method considerably expands the application domains where only automatically partially-aligned data is available.
 
 <center>
 <img src="https://user-images.githubusercontent.com/1419566/94226467-40420800-ff2a-11ea-9fa7-70141d3efe82.png" alt="drawing" style="width:100px;"/>
