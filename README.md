@@ -23,7 +23,7 @@ cd distant_supervision_nlg
 ./scripts/preprocess.sh wita50k
 ```
 
-## Train Baseline Model
+## Train Baseline Model (Optional)
 The model will be evaluated automatically during training.
 ```bash
 # Train S2ST model
