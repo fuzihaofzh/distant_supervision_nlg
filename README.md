@@ -28,6 +28,8 @@ The model will be evaluated automatically during training.
 ```bash
 # Train S2ST model
 ./scripts/train.sh wita50k base
+# Check Score
+tail -n 1 output/eval/wita50k__base/eval.100.txt
 ```
 
 ## Train Our DSG Model
@@ -37,5 +39,7 @@ The model will be evaluated automatically during training.
 ./scripts/train.sh wita50k endorsement,pretrain
 # Step 2. S2SG Training
 ./scripts/train.sh wita50k endorsement,beam_endorse
+# Check Score
+tail -n 1 output/eval/wita50k__endorsement,beam_endorse/eval.100.txt
 ```
 
