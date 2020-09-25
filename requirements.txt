@@ -1,3 +1,4 @@
 undecorated
 tensorboardX
 torch==1.4.0
+future
