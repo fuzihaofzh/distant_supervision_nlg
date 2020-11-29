@@ -19,7 +19,7 @@ EXPNAME="$DATASET"__"$MODE""$VERSION"
 
 LR=5e-4 #5e-4
 
-alias python="~/ProgramFiles/miniconda3/envs/fairseq/bin/python"
+#alias python="~/ProgramFiles/miniconda3/envs/fairseq/bin/python"
 which python
 
 echo "CUDA_VISIBLE_DEVICES:" $CUDA_VISIBLE_DEVICES
