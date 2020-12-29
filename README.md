@@ -48,7 +48,8 @@ tail -n 1 output/eval/wita50k__endorsement,beam_endorse/eval.100.txt
 @inproceedings{fu2020partially,
   title={Partially-Aligned Data-to-Text Generation with Distant Supervision},
   author={Fu, Zihao and Shi, Bei and Lam, Wai and Bing, Lidong and Liu, Zhiyuan},
-  booktitle={Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  booktitle={Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  pages={9183--9193},
   year={2020}
 }
 ```
